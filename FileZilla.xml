@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FileZilla3 version="3.27.0.1" platform="mac">
+	<Queue>
+		<Server>
+			<Host>themacepost.com</Host>
+			<Port>21</Port>
+			<Protocol>0</Protocol>
+			<Type>0</Type>
+			<User>ftp_takshak@themacepost.com</User>
+			<Logontype>2</Logontype>
+			<TimezoneOffset>0</TimezoneOffset>
+			<PasvMode>MODE_DEFAULT</PasvMode>
+			<MaximumMultipleConnections>0</MaximumMultipleConnections>
+			<EncodingType>Auto</EncodingType>
+			<BypassProxy>0</BypassProxy>
+			<File>
+				<LocalFile>/Users/mak3r/.htaccess</LocalFile>
+				<RemoteFile>.htaccess</RemoteFile>
+				<RemotePath>1 0</RemotePath>
+				<Download>1</Download>
+				<Size>61</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/.htaccess</LocalFile>
+				<RemoteFile>.htaccess</RemoteFile>
+				<RemotePath>1 0</RemotePath>
+				<Download>1</Download>
+				<Size>61</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/index.php</LocalFile>
+				<RemoteFile>index.php</RemoteFile>
+				<RemotePath>1 0</RemotePath>
+				<Download>1</Download>
+				<Size>34</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/index.html</LocalFile>
+				<RemoteFile>index.html</RemoteFile>
+				<RemotePath>1 0 4 2017</RemotePath>
+				<Download>0</Download>
+				<Size>5122</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/favicon.ico</LocalFile>
+				<RemoteFile>favicon.ico</RemoteFile>
+				<RemotePath>1 0 4 2017</RemotePath>
+				<Download>0</Download>
+				<Size>1150</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/bootstrap.min.css</LocalFile>
+				<RemoteFile>bootstrap.min.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css</RemotePath>
+				<Download>0</Download>
+				<Size>117150</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/animate.css</LocalFile>
+				<RemoteFile>animate.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css</RemotePath>
+				<Download>0</Download>
+				<Size>76235</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/font-awesome.min.css</LocalFile>
+				<RemoteFile>font-awesome.min.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css</RemotePath>
+				<Download>0</Download>
+				<Size>21984</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/main.css</LocalFile>
+				<RemoteFile>main.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css</RemotePath>
+				<Download>0</Download>
+				<Size>29322</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/normalize.css</LocalFile>
+				<RemoteFile>normalize.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css</RemotePath>
+				<Download>0</Download>
+				<Size>7798</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/colors/blue.css</LocalFile>
+				<RemoteFile>blue.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css 6 colors</RemotePath>
+				<Download>0</Download>
+				<Size>856</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/colors/blue-2.css</LocalFile>
+				<RemoteFile>blue-2.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css 6 colors</RemotePath>
+				<Download>0</Download>
+				<Size>858</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/colors/brick.css</LocalFile>
+				<RemoteFile>brick.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css 6 colors</RemotePath>
+				<Download>0</Download>
+				<Size>859</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/colors/dark.css</LocalFile>
+				<RemoteFile>dark.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css 6 colors</RemotePath>
+				<Download>0</Download>
+				<Size>846</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/colors/default-color.css</LocalFile>
+				<RemoteFile>default-color.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css 6 colors</RemotePath>
+				<Download>0</Download>
+				<Size>783</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/colors/green-2.css</LocalFile>
+				<RemoteFile>green-2.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css 6 colors</RemotePath>
+				<Download>0</Download>
+				<Size>859</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/colors/green.css</LocalFile>
+				<RemoteFile>green.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css 6 colors</RemotePath>
+				<Download>0</Download>
+				<Size>857</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/colors/orange.css</LocalFile>
+				<RemoteFile>orange.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css 6 colors</RemotePath>
+				<Download>0</Download>
+				<Size>858</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/colors/pink.css</LocalFile>
+				<RemoteFile>pink.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css 6 colors</RemotePath>
+				<Download>0</Download>
+				<Size>857</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/colors/purple.css</LocalFile>
+				<RemoteFile>purple.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css 6 colors</RemotePath>
+				<Download>0</Download>
+				<Size>861</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/colors/red-2.css</LocalFile>
+				<RemoteFile>red-2.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css 6 colors</RemotePath>
+				<Download>0</Download>
+				<Size>855</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/colors/red.css</LocalFile>
+				<RemoteFile>red.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css 6 colors</RemotePath>
+				<Download>0</Download>
+				<Size>853</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/colors/silver.css</LocalFile>
+				<RemoteFile>silver.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css 6 colors</RemotePath>
+				<Download>0</Download>
+				<Size>1017</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/colors/turquoise.css</LocalFile>
+				<RemoteFile>turquoise.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css 6 colors</RemotePath>
+				<Download>0</Download>
+				<Size>862</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/css/colors/violet.css</LocalFile>
+				<RemoteFile>violet.css</RemoteFile>
+				<RemotePath>1 0 4 2017 3 css 6 colors</RemotePath>
+				<Download>0</Download>
+				<Size>859</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/beon-webfont.eot</LocalFile>
+				<RemoteFile>beon-webfont.eot</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>53498</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/beon-webfont.svg</LocalFile>
+				<RemoteFile>beon-webfont.svg</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>101342</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/beon-webfont.woff</LocalFile>
+				<RemoteFile>beon-webfont.woff</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>23480</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/beon-webfont.ttf</LocalFile>
+				<RemoteFile>beon-webfont.ttf</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>53324</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/Beon.otf</LocalFile>
+				<RemoteFile>Beon.otf</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>33820</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/fontawesome-webfont.eot</LocalFile>
+				<RemoteFile>fontawesome-webfont.eot</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>56006</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/fontawesome-webfont.ttf</LocalFile>
+				<RemoteFile>fontawesome-webfont.ttf</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>112160</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/fontawesome-webfont.svg</LocalFile>
+				<RemoteFile>fontawesome-webfont.svg</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>287007</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/fontawesome-webfont.woff</LocalFile>
+				<RemoteFile>fontawesome-webfont.woff</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>65452</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/FontAwesome.otf</LocalFile>
+				<RemoteFile>FontAwesome.otf</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>85908</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/glyphicons-halflings-regular.eot</LocalFile>
+				<RemoteFile>glyphicons-halflings-regular.eot</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>20127</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/glyphicons-halflings-regular.ttf</LocalFile>
+				<RemoteFile>glyphicons-halflings-regular.ttf</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>45404</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/glyphicons-halflings-regular.svg</LocalFile>
+				<RemoteFile>glyphicons-halflings-regular.svg</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>108738</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/glyphicons-halflings-regular.woff</LocalFile>
+				<RemoteFile>glyphicons-halflings-regular.woff</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>23424</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/glyphicons-halflings-regular.woff2</LocalFile>
+				<RemoteFile>glyphicons-halflings-regular.woff2</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>18028</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/Lato-Bold-webfont.eot</LocalFile>
+				<RemoteFile>Lato-Bold-webfont.eot</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>28984</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/Lato-Bold-webfont.ttf</LocalFile>
+				<RemoteFile>Lato-Bold-webfont.ttf</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>58676</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/Lato-Bold-webfont.svg</LocalFile>
+				<RemoteFile>Lato-Bold-webfont.svg</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>250993</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/Lato-Bold-webfont.woff</LocalFile>
+				<RemoteFile>Lato-Bold-webfont.woff</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>32580</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/Lato-Bold-webfont.woff2</LocalFile>
+				<RemoteFile>Lato-Bold-webfont.woff2</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>25560</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/Lato-Light-webfont.eot</LocalFile>
+				<RemoteFile>Lato-Light-webfont.eot</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>27418</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/Lato-Light-webfont.svg</LocalFile>
+				<RemoteFile>Lato-Light-webfont.svg</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>237359</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/Lato-Light-webfont.ttf</LocalFile>
+				<RemoteFile>Lato-Light-webfont.ttf</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>56764</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/Lato-Light-webfont.woff2</LocalFile>
+				<RemoteFile>Lato-Light-webfont.woff2</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>24208</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/Lato-Light-webfont.woff</LocalFile>
+				<RemoteFile>Lato-Light-webfont.woff</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>31064</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/Lato-Regular-webfont.eot</LocalFile>
+				<RemoteFile>Lato-Regular-webfont.eot</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>28291</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/Lato-Regular-webfont.svg</LocalFile>
+				<RemoteFile>Lato-Regular-webfont.svg</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>238255</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/Lato-Regular-webfont.ttf</LocalFile>
+				<RemoteFile>Lato-Regular-webfont.ttf</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>57716</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/Lato-Regular-webfont.woff2</LocalFile>
+				<RemoteFile>Lato-Regular-webfont.woff2</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>25092</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/Lato-Regular-webfont.woff</LocalFile>
+				<RemoteFile>Lato-Regular-webfont.woff</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>31912</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/OpenSans-Light-webfont.eot</LocalFile>
+				<RemoteFile>OpenSans-Light-webfont.eot</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>10818</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/OpenSans-Light-webfont.svg</LocalFile>
+				<RemoteFile>OpenSans-Light-webfont.svg</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>32112</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/OpenSans-Light-webfont.ttf</LocalFile>
+				<RemoteFile>OpenSans-Light-webfont.ttf</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>19160</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/fonts/OpenSans-Light-webfont.woff</LocalFile>
+				<RemoteFile>OpenSans-Light-webfont.woff</RemoteFile>
+				<RemotePath>1 0 4 2017 5 fonts</RemotePath>
+				<Download>0</Download>
+				<Size>12524</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/img/Preloader.gif</LocalFile>
+				<RemoteFile>Preloader.gif</RemoteFile>
+				<RemotePath>1 0 4 2017 3 img</RemotePath>
+				<Download>0</Download>
+				<Size>26758</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/img/background.jpg</LocalFile>
+				<RemoteFile>background.jpg</RemoteFile>
+				<RemotePath>1 0 4 2017 3 img</RemotePath>
+				<Download>0</Download>
+				<Size>1427138</Size>
+				<DataType>1</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/js/classie.js</LocalFile>
+				<RemoteFile>classie.js</RemoteFile>
+				<RemotePath>1 0 4 2017 2 js</RemotePath>
+				<Download>0</Download>
+				<Size>1835</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/js/bootstrap.min.js</LocalFile>
+				<RemoteFile>bootstrap.min.js</RemoteFile>
+				<RemotePath>1 0 4 2017 2 js</RemotePath>
+				<Download>0</Download>
+				<Size>35452</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/js/form-contact.js</LocalFile>
+				<RemoteFile>form-contact.js</RemoteFile>
+				<RemotePath>1 0 4 2017 2 js</RemotePath>
+				<Download>0</Download>
+				<Size>1312</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/js/jquery.ajaxchimp.min.js</LocalFile>
+				<RemoteFile>jquery.ajaxchimp.min.js</RemoteFile>
+				<RemotePath>1 0 4 2017 2 js</RemotePath>
+				<Download>0</Download>
+				<Size>2381</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/js/gmaps.js</LocalFile>
+				<RemoteFile>gmaps.js</RemoteFile>
+				<RemotePath>1 0 4 2017 2 js</RemotePath>
+				<Download>0</Download>
+				<Size>55095</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/js/jquery.downCount.js</LocalFile>
+				<RemoteFile>jquery.downCount.js</RemoteFile>
+				<RemotePath>1 0 4 2017 2 js</RemotePath>
+				<Download>0</Download>
+				<Size>3581</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/js/main.js</LocalFile>
+				<RemoteFile>main.js</RemoteFile>
+				<RemotePath>1 0 4 2017 2 js</RemotePath>
+				<Download>0</Download>
+				<Size>1925</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/js/jquery.nicescroll.3.5.4.js</LocalFile>
+				<RemoteFile>jquery.nicescroll.3.5.4.js</RemoteFile>
+				<RemotePath>1 0 4 2017 2 js</RemotePath>
+				<Download>0</Download>
+				<Size>115641</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/js/modernizr.custom.js</LocalFile>
+				<RemoteFile>modernizr.custom.js</RemoteFile>
+				<RemotePath>1 0 4 2017 2 js</RemotePath>
+				<Download>0</Download>
+				<Size>8372</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/js/plugins.js</LocalFile>
+				<RemoteFile>plugins.js</RemoteFile>
+				<RemotePath>1 0 4 2017 2 js</RemotePath>
+				<Download>0</Download>
+				<Size>3074</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/js/vendor/modernizr-2.8.3.min.js</LocalFile>
+				<RemoteFile>modernizr-2.8.3.min.js</RemoteFile>
+				<RemotePath>1 0 4 2017 2 js 6 vendor</RemotePath>
+				<Download>0</Download>
+				<Size>15514</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/js/vendor/jquery-1.11.2.min.js</LocalFile>
+				<RemoteFile>jquery-1.11.2.min.js</RemoteFile>
+				<RemotePath>1 0 4 2017 2 js 6 vendor</RemotePath>
+				<Download>0</Download>
+				<Size>95966</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/switcher/switcher.js</LocalFile>
+				<RemoteFile>switcher.js</RemoteFile>
+				<RemotePath>1 0 4 2017 8 switcher</RemotePath>
+				<Download>0</Download>
+				<Size>4199</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/switcher/switcher.css</LocalFile>
+				<RemoteFile>switcher.css</RemoteFile>
+				<RemotePath>1 0 4 2017 8 switcher</RemotePath>
+				<Download>0</Download>
+				<Size>1288</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/index.html</LocalFile>
+				<RemoteFile>index.html</RemoteFile>
+				<RemotePath>1 0 4 2017</RemotePath>
+				<Download>0</Download>
+				<Size>5122</Size>
+				<DataType>0</DataType>
+			</File>
+			<File>
+				<LocalFile>/Users/mak3r/Downloads/comingwa-free-bootstrap-coming-soon-template/Comingwa-template/Comingwa-background-image/index.php</LocalFile>
+				<RemoteFile>index.php</RemoteFile>
+				<RemotePath>1 0</RemotePath>
+				<Download>1</Download>
+				<Size>34</Size>
+				<DataType>0</DataType>
+			</File>
+		</Server>
+	</Queue>
+</FileZilla3>
