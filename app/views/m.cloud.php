@@ -1,7 +1,6 @@
-
 <html>
 	<head>
-	<script src="/cdn-cgi/apps/head/EQZCnk4gCeNwUQsZ03sLJaa105M.js"></script><style>
+	<style>
 	*{
 		box-sizing: border-box;
 		margin: 0;
@@ -9,12 +8,12 @@
 	}
 	body {
 		color: #eee;
-		background: black;
 		text-shadow: 0 -1px 0 rgba( 0, 0, 0, .6 );
 		font-family: 'Open Sans', sans-serif;
 		font-size: 13px;
 		line-height: 16px;
 		overflow: hidden;
+		background: black;
 	}
 	#viewport {
 		-webkit-perspective: 1000;
@@ -42,27 +41,29 @@
 		);  */
 		width:140%;
 		height: 130%;
-		background: black;
+		z-index: 1;
 	}
 
 	#world {
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		margin-left: -256px;
-		margin-top: -256px;
+		margin-left: -156px;
+		margin-top: -356px;
 		height: 512px;
 		width: 512px;
 		/* background-color: rgba( 255, 0, 0, .2 ); */
 		-webkit-transform-style: preserve-3d;
 		-moz-transform-style: preserve-3d;
 		-o-transform-style: preserve-3d;
+		z-index: 1;
 	}
 
 	#world div {
 		-webkit-transform-style: preserve-3d;
 		-moz-transform-style: preserve-3d;
 		-o-transform-style: preserve-3d;
+		margin-left:-100px;
 	}
 
 	.cloudBase {
@@ -73,7 +74,7 @@
 		/* background-image: url('cloud.png'); */
 		margin-left: -10px;
 		margin-top: -10px;
-		z-index: 1;
+		z-index: 0;
 	}
 
 	.cloudLayer {
@@ -89,7 +90,7 @@
 		-moz-transition: opacity .5s ease-out;
 		-o-transition: opacity .5s ease-out;
 		transition: opacity 0.5s ease-out;
-		z-index: 5;
+		z-index: 0;
 	}
 		
 		.movingCloud1{
@@ -99,37 +100,67 @@
 		}
 
 	#title{
-		height:150px;
+		height:50px;
 		opacity: 0;
-		padding-left: 250px;
+		padding-left: 290px;
 		position: absolute;
 		/* width:600px; */
-		margin-left: -150px;
+		margin-left: -190px;
 		-webkit-transition: 50s;
 		-moz-transition: 50s;
 		-o-transition: 50s;
 		transition: 20s;
-		z-index: 1;
+		z-index: 3;
 	}
 	#titleBase{
 		height:500px;
 		width:600px;
+		z-index: 1;
 	}
 	.bimg3{
 		-webkit-transition: 40s;
 		-moz-transition: 40s;
 		-o-transition: 40s;
 		transition: 18s;
+		position:fixed;
 	}
 	#logo{
 		-webkit-transition: 40s;
 		-moz-transition: 40s;
 		-o-transition: 40s;
 		transition: 40s;
-		position: absolute;
-		z-index: 0;
-		padding-top: 80px;
-		padding-left: 80px;
+		position: relative;
+		z-index: 7;
+		padding-top: 50px;
+		padding-left: 35px;
+	}
+	#comingSoon{
+		-webkit-transition: 40s;
+		-moz-transition: 40s;
+		-o-transition: 40s;
+		transition: 40s;
+		position: relative;
+		z-index: 7;
+		height: 70px;
+		/*width:600px;*/
+		/*display: inline;*/
+		/*padding-top: 470px;*/
+		margin-left: 85px;
+		margin-top: -50px;
+	}
+	#Date{
+		-webkit-transition: 40s;
+		-moz-transition: 40s;
+		-o-transition: 40s;
+		transition: 40s;
+		position: relative;
+		z-index: 7;
+		height: 70px;
+		/*width:600px;*/
+		/*display: inline;*/
+		/*padding-top: 470px;*/
+		margin-left: 85px;
+		margin-top: -20px;
 	}
 	.lightning{
 		-webkit-filter: brightness(3);
@@ -139,17 +170,17 @@
 	}
 	/*Now just a opacity animation*/
 	.flashit{
-	-webkit-animation: flash ease-out 7s infinite;
-	animation: flash ease-out 7s infinite;
-	-webkit-animation-delay: 2s;
-			animation-delay: 2s;
+	-webkit-animation: flash ease-out 10s infinite;
+	animation: flash ease-out 10s infinite;
+	-webkit-animation-delay: 1s;
+			animation-delay: 1s;
 	}
 
 	.flashit2{
-	-webkit-animation: flash ease-out 7s infinite;
-	animation: flash ease-out 7s infinite;
-	-webkit-animation-delay: 4.5s;
-			animation-delay: 4.5s;
+	-webkit-animation: flash ease-out 15s infinite;
+	animation: flash ease-out 15s infinite;
+	-webkit-animation-delay: 1s;
+			animation-delay: 1s;
 	}
 
 	@-webkit-keyframes flash {
@@ -174,26 +205,52 @@
 		0% { left:-20%;} 
 		100% { left: 120%; }
 	}
+	.bimg31{
+		transform: perspective(1000px) translateZ( 845px ) translateX(50px);
+	}
+	.bimg4{
+		transform: perspective(1000px) translateX(-250px) translateY(100px) translateZ( 500px );
+	}
 </style>
 <script>
 	var titleFunc = function(){
+	    var Dateimg = document.getElementById('Date');
+		var thunder = document.getElementById('thunder');
 		var title = document.getElementById('title');
 		var logo = document.getElementById('logo');
-		title.style.height= "500px";
+		var comingSoon = document.getElementById('comingSoon');
+		title.style.height= "300px";
 		title.style.opacity="1";
 		title.style.paddingLeft="0px";
+		// title.style.transform = "translateY(100px)";
 		document.getElementsByName('bimg3').forEach(function(cloud){
 			cloud.style.opacity="0.2";
 		});
 		setTimeout(function(){
-			title.style.height = "300px";
-			title.style.paddingLeft="200px";
-			title.style.transform = "translateY(-170px)";
+			title.style.height = "150px";
+			title.style.paddingLeft="190px";
+			title.style.transform = "translateY(-50px)";
 			setTimeout(()=>{
 				logo.style.opacity="1";
+				setTimeout(()=>{
+				    comingSoon.style.opacity="1";
+				    setTimeout((()=>{
+				        Dateimg.style.opacity="1";
+					}))
+				}, 1000);
 			}, 1000);
 		}, 11000);
-		let flag = 1;
+//		setTimeout(()=>{
+//			setInterval(()=>{
+//				thunder.play();
+//			}, 2000);
+//		}, 2000);
+//		setTimeout(()=>{
+//			setInterval(()=>{
+//				thunder.play();
+//			}, 4500);
+//		}, 4500);
+		// let flag = 1;
 		// let viewport = document.getElementById("viewport");
 		// setInterval(()=>{
 			// let time = Math.random() * 3700;
@@ -219,27 +276,35 @@
 	</script>
 	</head>
 	<body onload="titleFunc()">
-
+	<audio autoplay loop>
+		 <source src="http://www.takshak.in/2017/public/sounds/bgm.mp3" type="audio/mpeg"> 
+	</audio>
+	<audio id="thunder">
+		<source src="http://www.takshak.in/2017/public/sounds/thuder1.mp3" type="audio/mpeg">
+	</audio>
 	<div id="viewport" >
 		<div id="world" >
 			<div id="titleBase">
-				
-				<img id="title" src="./images/Title.png"/>
-				<img id="logo" src="./images/logo.png" style="opacity:0"/>
-				<img class="cloudLayer bimg3" name="bimg3" style="opacity:1" src="./images/cloud.png"/>
-				<img class="cloudLayer bimg3 lightning flashit" name="bimg3" style="opacity:1" src="./images/cloud.png"/>
-				<img class="cloudLayer bimg3" name="bimg4" style="opacity:0.2" src="./images/cloud.png"/>
-				<img class="cloudLayer bimg3 lightning flashit2" name="bimg4" style="opacity:1" src="./images/cloud.png"/>
+				<!-- <img id="title" src="http:/localhost/Takshak17/public/images/Takshak.png"/> -->
+				<img id="title" src="http://www.takshak.in/2017/public/images/Takshak.png"/>
+				<!-- <img id="logo" src="http:/localhost/Takshak17/public/images/logo.png" style="opacity:0"/> -->
+				<img id="logo" src="http://www.takshak.in/2017/public/images/logo.png" style="opacity:0"/>
+				<!-- <img id="comingSoon" src="http:/localhost/Takshak17/public/images/comingSoon.png" style="opacity:0"/> -->
+				<img id="comingSoon" src="http://www.takshak.in/2017/public/images/comingSoon.png" style="opacity:0"/>
+				<img id="Date" src="http://www.takshak.in/2017/public/images/Date.png" style="opacity:0"/>
+				<!-- <img id="comingSoon" src="./images/comingSoon.png"/> -->
 				<!-- <img class="cloudLayer bimg3" name="bimg3" style="opacity:1" src="./images/cloud.png"/>  -->
 			</div>
 		</div>
 	</div>
-
 	<div id="cloudBase">
-		 <img class="cloudLayer lightning flashit" id="bimg" style="opacity:0.3" src="./images/cloud.png"/> 
-		 <img class="cloudLayer lightning flashit" id="bimg2" style="opacity:0.4" src="./images/cloud.png"/> 
+		<!-- <img class="cloudLayer lightning flashit" id="bimg" style="opacity:0.3" src="./images/cloud.png"/>
+        <img class="cloudLayer lightning flashit" id="bimg2" style="opacity:0.4" src="./images/cloud.png"/>  -->
 	</div>
-		
+	<img class="cloudLayer bimg3 bimg31" name="bimg3" style="opacity:1" src="http://www.takshak.in/2017/public/images/cloud.png"/>
+	<img class="cloudLayer bimg3 bimg31 lightning flashit" name="bimg3" style="opacity:1" src="http://www.takshak.in/2017/public/images/cloud.png"/>
+	<img class="cloudLayer bimg3 bimg4" name="bimg4" style="opacity:0.2" src="http://www.takshak.in/2017/public/images/cloud.png"/>
+	<img class="cloudLayer bimg3 bimg4 lightning flashit2" name="bimg4" style="opacity:1" src="http://www.takshak.in/2017/public/images/cloud.png"/>
 	<script>
 
 	(function() {
@@ -297,38 +362,39 @@
 		// div.style.oTransform = t;
 		// world.appendChild( div );
 
-		var bimg = document.getElementById('bimg');
-		var t = 'translateZ( 400px )';
-		bimg.style.webkitTransform = t;
-		bimg.style.MozTransform = t;
-		bimg.style.oTransform = t;
-		var bimg2 = document.getElementById('bimg2');
-		var t = 'translateZ( 400px )';
-		bimg2.style.webkitTransform = t;
-		bimg2.style.MozTransform = t;
-		bimg2.style.oTransform = t;
-		document.getElementsByName('bimg3').forEach(function(cloud){
-			var t = 'translateZ( 400px )';
-			cloud.style.webkitTransform = t;
-			cloud.style.MozTransform = t;
-			cloud.style.oTransform = t;
-			// world.appendChild( div );
-			// layers.push(bimg);
-		});
-		document.getElementsByName('bimg4').forEach(function(cloud){
-			var t = 'translateZ( 250px ) translateX(-250px) translateY(100px)';
-			cloud.style.webkitTransform = t;
-			cloud.style.MozTransform = t;
-			cloud.style.oTransform = t;
-			// world.appendChild( div );
-			// layers.push(bimg);
-		});
-
-		for( var j = 0; j < 5 + Math.round( Math.random() * 10 ); j++ ) {
+		// var bimg = document.getElementById('bimg');
+		// var t = 'translateZ( 400px )';
+		// bimg.style.webkitTransform = t;
+		// bimg.style.MozTransform = t;
+		// bimg.style.oTransform = t;
+		// var bimg2 = document.getElementById('bimg2');
+		// var t = 'translateZ( 400px )';
+		// bimg2.style.webkitTransform = t;
+		// bimg2.style.MozTransform = t;
+		// bimg2.style.oTransform = t;
+		// document.getElementsByName('bimg3').forEach(function(cloud){
+		// 	var t = 'translateZ( 400px )';
+		// 	cloud.style.webkitTransform = t;
+		// 	cloud.style.MozTransform = t;
+		// 	cloud.style.oTransform = t;
+		// 	// world.appendChild( div );
+		// 	// layers.push(bimg);
+		// });
+		// document.getElementsByName('bimg4').forEach(function(cloud){
+		// 	var t = 'translateZ( 250px ) translateX(550px) translateY(150px)';
+		// 	cloud.style.webkitTransform = t;
+		// 	cloud.style.MozTransform = t;
+		// 	cloud.style.oTransform = t;
+		// 	// world.appendChild( div );
+		// 	// layers.push(bimg);
+		// });
+		var size = Math.round( Math.random() * 10 );
+		console.log(size);
+		for( var j = 0; j < 5 + size; j++ ) {
 			var cloud = document.createElement( 'img' );
 			cloud.style.opacity = 0;
 			var r = Math.random();
-			var src = './images/cloud.png';
+			var src = 'http://www.takshak.in/2017/public/images/cloud.png';
 			( function( img ) { img.addEventListener( 'load', function() {
 				img.style.opacity = .4;
 			} ) } )( cloud );
@@ -342,12 +408,13 @@
 			}	
 			cloud.style.animationDuration = (22+(Math.random() * 800))+"s";
 			cloud.style.animationDelay =  "-"+(10+Math.random() * 1000)+"s";
-
+			
 			var x = 256 - ( Math.random() * 512 );
 			var y = 256 - ( Math.random() * 512 );
-			var z = 100 - ( Math.random() * 200 );
+			var z = 1000 - ( Math.random() * 200 );
+			console.log("z: "+z);
 			var a = Math.random() * 360;
-			var s = .25 + Math.random();
+			var s = .75 + Math.random();
 			x *= .2; y *= .2;
 			cloud.data = {
 				x: x,
@@ -406,7 +473,7 @@
 		// }
 		
 		objects.push(document.getElementById('bimg'));
-		for( var j = 0; j < 5; j++ ) {
+		for( var j = 0; j < 1; j++ ) {
 			objects.push( createCloud() );
 		}
 
@@ -431,42 +498,42 @@
 			layer.style.MozTransform = t;
 			layer.style.oTransform = t;
 		}
-		var layer = document.getElementById('bimg');
-		zbing = zbing + zspeed;
-		// layer.data.a += layer.data.speed;
-		// var t = 'translateX( ' + layer.data.x + 'px ) translateY( ' + layer.data.y + 'px ) translateZ( ' + layer.data.z + 'px ) rotateY( ' + ( - worldYAngle ) + 'deg ) rotateX( ' + ( - worldXAngle ) + 'deg ) rotateZ( ' + layer.data.a + 'deg ) scale( ' + layer.data.s + ')';
-		var t = 'translateZ( 345px ) rotateY( ' + ( - worldYAngle ) + 'deg ) rotateX( ' + ( - worldXAngle ) + 'deg ) rotateZ('+zbing+'deg)';
-		layer.style.webkitTransform = t;
-		layer.style.MozTransform = t;
-		layer.style.oTransform = t;
-		var layer = document.getElementById('bimg2');
-		zbing = zbing + zspeed;
-		// layer.data.a += layer.data.speed;
-		// var t = 'translateX( ' + layer.data.x + 'px ) translateY( ' + layer.data.y + 'px ) translateZ( ' + layer.data.z + 'px ) rotateY( ' + ( - worldYAngle ) + 'deg ) rotateX( ' + ( - worldXAngle ) + 'deg ) rotateZ( ' + layer.data.a + 'deg ) scale( ' + layer.data.s + ')';
-		var t = 'translateX(100px) translateZ( 270px ) rotateY( ' + ( - worldYAngle ) + 'deg ) rotateX( ' + ( - worldXAngle ) + 'deg ) rotateZ('+(-zbing)+'deg)';
-		layer.style.webkitTransform = t;
-		layer.style.MozTransform = t;
-		layer.style.oTransform = t;
-		var layer = document.getElementsByName('bimg3');
-		layer.forEach(function(cloud) {
-			zbing = zbing + zspeed;
-			// layer.data.a += layer.data.speed;
-			// var t = 'translateX( ' + layer.data.x + 'px ) translateY( ' + layer.data.y + 'px ) translateZ( ' + layer.data.z + 'px ) rotateY( ' + ( - worldYAngle ) + 'deg ) rotateX( ' + ( - worldXAngle ) + 'deg ) rotateZ( ' + layer.data.a + 'deg ) scale( ' + layer.data.s + ')';
-			var t = 'translateZ( 345px ) rotateY( ' + ( - worldYAngle ) + 'deg ) rotateX( ' + ( - worldXAngle ) + 'deg ) rotateZ('+(-zbing)+'deg)';
-			cloud.style.webkitTransform = t;
-			cloud.style.MozTransform = t;
-			cloud.style.oTransform = t;
-		}, this);
-		var layer = document.getElementsByName('bimg4');
-		layer.forEach(function(cloud) {
-			zbing = zbing + zspeed;
-			// layer.data.a += layer.data.speed;
-			// var t = 'translateX( ' + layer.data.x + 'px ) translateY( ' + layer.data.y + 'px ) translateZ( ' + layer.data.z + 'px ) rotateY( ' + ( - worldYAngle ) + 'deg ) rotateX( ' + ( - worldXAngle ) + 'deg ) rotateZ( ' + layer.data.a + 'deg ) scale( ' + layer.data.s + ')';
-			var t = 'translateX(-250px) translateY(100px) translateZ( 250px )  rotateY( ' + (worldYAngle) + 'deg ) rotateX( ' + ( - worldXAngle ) + 'deg ) rotateZ('+(zbing)+'deg)';
-			cloud.style.webkitTransform = t;
-			cloud.style.MozTransform = t;
-			cloud.style.oTransform = t;
-		}, this);
+		// var layer = document.getElementById('bimg');
+		// zbing = zbing + zspeed;
+		// // layer.data.a += layer.data.speed;
+		// // var t = 'translateX( ' + layer.data.x + 'px ) translateY( ' + layer.data.y + 'px ) translateZ( ' + layer.data.z + 'px ) rotateY( ' + ( - worldYAngle ) + 'deg ) rotateX( ' + ( - worldXAngle ) + 'deg ) rotateZ( ' + layer.data.a + 'deg ) scale( ' + layer.data.s + ')';
+		// var t = 'translateZ( 345px ) rotateY( ' + ( - worldYAngle ) + 'deg ) rotateX( ' + ( - worldXAngle ) + 'deg ) rotateZ('+zbing+'deg)';
+		// layer.style.webkitTransform = t;
+		// layer.style.MozTransform = t;
+		// layer.style.oTransform = t;
+		// var layer = document.getElementById('bimg2');
+		// zbing = zbing + zspeed;
+		// // layer.data.a += layer.data.speed;
+		// // var t = 'translateX( ' + layer.data.x + 'px ) translateY( ' + layer.data.y + 'px ) translateZ( ' + layer.data.z + 'px ) rotateY( ' + ( - worldYAngle ) + 'deg ) rotateX( ' + ( - worldXAngle ) + 'deg ) rotateZ( ' + layer.data.a + 'deg ) scale( ' + layer.data.s + ')';
+		// var t = 'translateX(100px) translateZ( 270px ) rotateY( ' + ( - worldYAngle ) + 'deg ) rotateX( ' + ( - worldXAngle ) + 'deg ) rotateZ('+(-zbing)+'deg)';
+		// layer.style.webkitTransform = t;
+		// layer.style.MozTransform = t;
+		// layer.style.oTransform = t;
+		// var layer = document.getElementsByName('bimg3');
+		// layer.forEach(function(cloud) {
+		// 	zbing = zbing + zspeed;
+		// 	// layer.data.a += layer.data.speed;
+		// 	// var t = 'translateX( ' + layer.data.x + 'px ) translateY( ' + layer.data.y + 'px ) translateZ( ' + layer.data.z + 'px ) rotateY( ' + ( - worldYAngle ) + 'deg ) rotateX( ' + ( - worldXAngle ) + 'deg ) rotateZ( ' + layer.data.a + 'deg ) scale( ' + layer.data.s + ')';
+		// 	var t = 'translateZ( 345px ) rotateY( ' + ( - worldYAngle ) + 'deg ) rotateX( ' + ( - worldXAngle ) + 'deg ) rotateZ('+(-zbing)+'deg)';
+		// 	cloud.style.webkitTransform = t;
+		// 	cloud.style.MozTransform = t;
+		// 	cloud.style.oTransform = t;
+		// }, this);
+		// var layer = document.getElementsByName('bimg4');
+		// layer.forEach(function(cloud) {
+		// 	zbing = zbing + zspeed;
+		// 	// layer.data.a += layer.data.speed;
+		// 	// var t = 'translateX( ' + layer.data.x + 'px ) translateY( ' + layer.data.y + 'px ) translateZ( ' + layer.data.z + 'px ) rotateY( ' + ( - worldYAngle ) + 'deg ) rotateX( ' + ( - worldXAngle ) + 'deg ) rotateZ( ' + layer.data.a + 'deg ) scale( ' + layer.data.s + ')';
+		// 	var t = 'translateX(-250px) translateY(100px) translateZ( 250px )  rotateY( ' + (worldYAngle) + 'deg ) rotateX( ' + ( - worldXAngle ) + 'deg ) rotateZ('+(zbing)+'deg)';
+		// 	cloud.style.webkitTransform = t;
+		// 	cloud.style.MozTransform = t;
+		// 	cloud.style.oTransform = t;
+		// }, this);
 		requestAnimationFrame( update );
 
 	}
