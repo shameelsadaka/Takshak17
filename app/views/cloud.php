@@ -1,6 +1,7 @@
 
 <html>
 	<head>
+		<title>Takshak'17</title>
 	<style>
 	*{
 		box-sizing: border-box;
@@ -15,7 +16,7 @@
 		line-height: 16px;
 		overflow: hidden;
 		background: black;
-		zoom:110%
+		zoom:85%;
 	}
 	#viewport {
 		/* -webkit-perspective: 1000;
@@ -185,10 +186,10 @@
 		transform: perspective(1000px) translateX(-250px) translateY(100px) translateZ( 500px );
 	}
 	.about{
-		-webkit-transition: 40s;
-		-moz-transition: 40s;
-		-o-transition: 40s;
-		transition: 40s;
+		-webkit-transition: 30s;
+		-moz-transition: 30s;
+		-o-transition: 30s;
+		transition: 30;
 		z-index:1;
 		height: 40px;
 		margin-top: -10px;
@@ -290,12 +291,12 @@
 				<img id="title" src="http://www.takshak.in/2017/public/images/Takshak.png"/>
 				<img id="logo" src="http://www.takshak.in/2017/public/images/logo.png" style="opacity:0"/>
 				<img id="comingSoon" src="http://www.takshak.in/2017/public/images/comingSoon.png" style="opacity:0"/>
-				<img id="Date" src="http://www.takshak.in/2017/public/images/Date.png" style="opacity:0"/>
-				<img style="float:left" class="about" src="http://localhost/Takshak17/public/images/aboutTriggers1.png" onclick="popup('takshak')">
-				<img id="mac" class="about" src="http://localhost/Takshak17/public/images/aboutTriggers2.png" style="float:left" onclick="popup('mace')">
+				<img id="Date" src="http://www.takshak.in/2017/public/images/Date.png" style="opacity:0"/><br>
+				<img class="about" style="float:left" src="http://www.takshak.in/2017/public/images/aboutTriggers1.png" onclick="popup('takshak')">
+				<img id="mac" class="about" src="http://www.takshak.in/2017/public/images/aboutTriggers2.png" style="float:left" onclick="popup('mace')">
 				<div id="aboutdiv" style="z-index:5">
-					<img id="AboutTakshak" src="http://localhost/Takshak17/public/images/AboutTakshak.png" style="opacity:0"/>
-					<img id="AboutMACE" src="http://localhost/Takshak17/public/images/AboutMACE.png" style="opacity:0"/>
+					<img id="AboutTakshak" src="http://www.takshak.in/2017/public/images/AboutTakshak.png" style="opacity:0"/>
+					<img id="AboutMACE" src="http://www.takshak.in/2017/public/images/AboutMACE.png" style="opacity:0"/>
 				</div>
 			</div>
 		</div>

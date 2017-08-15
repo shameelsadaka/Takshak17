@@ -1,5 +1,6 @@
 <html>
 	<head>
+	<title>Takshak'17</title>
 	<style>
 	*{
 		box-sizing: border-box;
@@ -31,6 +32,7 @@
 		height: 130%;
 		z-index: 1;
 		margin-top:150px;
+		zoom:150%;
 	}
 
 	#world {
@@ -92,7 +94,7 @@
 	#title{
 		height:50px;
 		opacity: 0;
-		padding-left: 290px;
+		padding-left: 330px;
 		position: absolute;
 		margin-left: -190px;
 		-webkit-transition: 10s;
@@ -193,10 +195,10 @@
 		transform: perspective(1000px) translateX(-250px) translateY(100px) translateZ( 500px );
 	}
 	.about{
-		-webkit-transition: 40s;
-		-moz-transition: 40s;
-		-o-transition: 40s;
-		transition: 40s;
+		-webkit-transition: 30s;
+		-moz-transition: 30s;
+		-o-transition: 30s;
+		transition: 30;
 		z-index:1;
 		height: 40px;
 		margin-top: -10px;
@@ -223,9 +225,9 @@
 		-moz-transition: 10s;
 		-o-transition: 10s;
 		transition: 10s;
-		margin-top: -50px;
-		margin-left: 160px;
-		height: 750px;
+		margin-top: -100px;
+		margin-left: 120px;
+		height: 1000px;
 	}
 	#aboutdiv{
 		z-index:10;
@@ -253,7 +255,7 @@
 		}
 	}
 	var titleFunc = function(){
-		document.getElementById('bgm').play();
+		// document.getElementById('bgm').play();
 	    var Dateimg = document.getElementById('Date');
 		var thunder = document.getElementById('thunder');
 		var title = document.getElementById('title');
@@ -300,12 +302,12 @@
 				<img id="title" src="http://www.takshak.in/2017/public/images/Takshak.png"/>
 				<img id="logo" src="http://www.takshak.in/2017/public/images/logo.png" style="opacity:0"/>
 				<img id="comingSoon" src="http://www.takshak.in/2017/public/images/comingSoon.png" style="opacity:0"/>
-				<img id="Date" src="http://www.takshak.in/2017/public/images/Date.png" style="opacity:0"/>
-				<img style="float:left" class="about" src="http://localhost/Takshak17/public/images/aboutTriggers1.png" onclick="popup('takshak')">
-				<img id="mac" class="about" src="http://localhost/Takshak17/public/images/aboutTriggers2.png" style="float:left" onclick="popup('mace')">
+				<img id="Date" src="http://www.takshak.in/2017/public/images/Date.png" style="opacity:0"/><br>
+				<img style="float:left" class="about" src="http://www.takshak.in/2017/public/images/aboutTriggers1.png" onclick="popup('takshak')">
+				<img id="mac" class="about" src="http://www.takshak.in/2017/public/images/aboutTriggers2.png" style="float:left" onclick="popup('mace')">
 				<div id="aboutdiv" style="z-index:5">
-					<img id="AboutTakshak" src="http://localhost/Takshak17/public/images/AboutTakshak.png" style="opacity:0"/>
-					<img id="AboutMACE" src="http://localhost/Takshak17/public/images/AboutMACE.png" style="opacity:0"/>
+					<img id="AboutTakshak" src="http://www.takshak.in/2017/public/images/AboutTakshak.png" style="opacity:0"/>
+					<img id="AboutMACE" src="http://www.takshak.in/2017/public/images/AboutMACE.png" style="opacity:0"/>
 				</div>
 			</div>
 		</div>
