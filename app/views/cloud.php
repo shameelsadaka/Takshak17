@@ -226,6 +226,22 @@
 		position: absolute;
 		display:none;
 	}
+	#preloader{
+		width:100%;
+		height:100%;
+		z-index:300;
+		background:url('http://localhost/Takshak17/public/images/0.gif');
+		background-repeat:no-repeat;
+		background-position:center;
+		text-align:center;
+		vertical-align: middle;
+	}
+	#wrapper{
+		display:none;
+	}
+	#loading{
+		padding-top:58vh;
+	}
 </style>
 <script>
 	var popup = function(element){
@@ -245,6 +261,8 @@
 		}
 	}
 	var titleFunc = function(){
+		document.getElementById('preloader').style.display = "none";
+		document.getElementById('wrapper').style.display="";
 	    var Dateimg = document.getElementById('Date');
 		var thunder = document.getElementById('thunder');
 		var title = document.getElementById('title');
@@ -283,28 +301,33 @@
 	<audio id="thunder">
 		<source src="http://www.takshak.in/2017/public/sounds/thuder1.mp3" type="audio/mpeg">
 	</audio>
-	<div id="cloudBase">
+	<div id="preloader">
+		<div id="loading">Loading....</div>
 	</div>
-	<div id="viewport" >
-		<div id="world" >
-			<div id="titleBase">
-				<img id="title" src="http://www.takshak.in/2017/public/images/Takshak.png"/>
-				<img id="logo" src="http://www.takshak.in/2017/public/images/logo.png" style="opacity:0"/>
-				<img id="comingSoon" src="http://www.takshak.in/2017/public/images/comingSoon.png" style="opacity:0"/>
-				<img id="Date" src="http://www.takshak.in/2017/public/images/Date.png" style="opacity:0"/><br>
-				<img class="about" style="float:left" src="http://www.takshak.in/2017/public/images/aboutTriggers1.png" onclick="popup('takshak')">
-				<img id="mac" class="about" src="http://www.takshak.in/2017/public/images/aboutTriggers2.png" style="float:left" onclick="popup('mace')">
-				<div id="aboutdiv" style="z-index:5">
-					<img id="AboutTakshak" src="http://www.takshak.in/2017/public/images/AboutTakshak.png" style="opacity:0"/>
-					<img id="AboutMACE" src="http://www.takshak.in/2017/public/images/AboutMACE.png" style="opacity:0"/>
+	<div id="wrapper">
+		<div id="cloudBase">
+		</div>
+		<div id="viewport" >
+			<div id="world" >
+				<div id="titleBase">
+					<img id="title" src="http://www.takshak.in/2017/public/images/Takshak.png"/>
+					<img id="logo" src="http://www.takshak.in/2017/public/images/logo.png" style="opacity:0"/>
+					<img id="comingSoon" src="http://www.takshak.in/2017/public/images/comingSoon.png" style="opacity:0"/>
+					<img id="Date" src="http://www.takshak.in/2017/public/images/Date.png" style="opacity:0"/><br>
+					<img class="about" style="float:left" src="http://www.takshak.in/2017/public/images/aboutTriggers1.png" onclick="popup('takshak')">
+					<img id="mac" class="about" src="http://www.takshak.in/2017/public/images/aboutTriggers2.png" style="float:left" onclick="popup('mace')">
+					<div id="aboutdiv" style="z-index:5">
+						<img id="AboutTakshak" src="http://www.takshak.in/2017/public/images/AboutTakshak.png" style="opacity:0"/>
+						<img id="AboutMACE" src="http://www.takshak.in/2017/public/images/AboutMACE.png" style="opacity:0"/>
+					</div>
 				</div>
 			</div>
 		</div>
+		<img class="cloudLayer bimg3 bimg31" name="bimg3" style="opacity:1" src="http://www.takshak.in/2017/public/images/cloud.png"/>
+		<img class="cloudLayer bimg3 bimg31 lightning flashit" name="bimg3" style="opacity:1" src="http://www.takshak.in/2017/public/images/cloud.png"/>
+		<img class="cloudLayer bimg3 bimg4" name="bimg4" style="opacity:0.2" src="http://www.takshak.in/2017/public/images/cloud.png"/>
+		<img class="cloudLayer bimg3 lightning bimg4 flashit2" name="bimg4" style="opacity:1" src="http://www.takshak.in/2017/public/images/cloud.png"/>
 	</div>
-	<img class="cloudLayer bimg3 bimg31" name="bimg3" style="opacity:1" src="http://www.takshak.in/2017/public/images/cloud.png"/>
-	<img class="cloudLayer bimg3 bimg31 lightning flashit" name="bimg3" style="opacity:1" src="http://www.takshak.in/2017/public/images/cloud.png"/>
-	<img class="cloudLayer bimg3 bimg4" name="bimg4" style="opacity:0.2" src="http://www.takshak.in/2017/public/images/cloud.png"/>
-	<img class="cloudLayer bimg3 lightning bimg4 flashit2" name="bimg4" style="opacity:1" src="http://www.takshak.in/2017/public/images/cloud.png"/>
 	<script>
 
 	(function() {
