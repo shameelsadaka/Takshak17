@@ -15,6 +15,7 @@
 		line-height: 16px;
 		overflow: hidden;
 		background: black;
+		zoom:110%
 	}
 	#viewport {
 		/* -webkit-perspective: 1000;
@@ -227,20 +228,16 @@
 </style>
 <script>
 	var popup = function(element){
-		console.log(element);
 		document.getElementById('aboutdiv').style.display = "flex";
 		if(element == "takshak"){
-			console.log("yipee");
 			document.getElementById('AboutTakshak').style.opacity=1;
 		}
 		else{
-			console.log("oh no");
 			document.getElementById('AboutMACE').style.opacity=1;
 		}
 	}
 	window.onclick = (e) => {
 		if(e.target.className!="about"){
-			console.log("closing");
 			document.getElementById('aboutdiv').style.display = "none";
 			AboutTakshak.style.opacity = 0;
 			AboutMACE.style.opacity = 0;
@@ -274,7 +271,7 @@
 					}));
 				}, 1000);
 			}, 1000);
-		}, 6000);
+		}, 4000);
 	}
 	</script>
 	</head>
