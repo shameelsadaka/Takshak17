@@ -21,8 +21,7 @@
 		-moz-perspective: 1000;
 		-o-perspective: 1000; */
 		perspective: 1000;
-		position: static;
-		margin-top:300px;
+		position: absolute;
 		left: 0;
 		top: 0;
 		right: 0;
@@ -110,7 +109,7 @@
 		-o-transition: 25s;
 		transition: 25s;
 		position: relative;
-		z-index: 7;
+		z-index: 1;
 		padding-top: 50px;
 		padding-left: 35px;
 	}
@@ -121,7 +120,7 @@
 		-o-transition: 25s;
 		transition: 25s;
 		position: relative;
-		z-index: 7;
+		z-index: 1;
 		height: 70px;
 		margin-top: -50px;
 	}
@@ -131,7 +130,7 @@
 		-o-transition: 25s;
 		transition: 25s;
 		position: relative;
-		z-index: 7;
+		z-index: 1;
 		height: 70px;
 		margin-left: 85px;
 		margin-top: -20px;
@@ -189,47 +188,63 @@
 		-moz-transition: 40s;
 		-o-transition: 40s;
 		transition: 40s;
-		z-index:15;
+		z-index:1;
 		height: 40px;
-		margin-top: -25px;
+		margin-top: -10px;
 		padding-left:80px;
 		opacity:0;
 	}
 	#AboutTakshak{
 		z-index:10;
-		-webkit-transition: 5s;
-		-moz-transition: 5s;
-		-o-transition: 5s;
-		transition: 5s;
+		position: absolute;
+		top: -10%;
+		left: -15%;
+		-webkit-transition: 10s;
+		-moz-transition: 10s;
+		-o-transition: 10s;
+		transition: 10s;
+		margin-left: -50px;
 	}
 	#AboutMACE{
 		z-index:10;
-		-webkit-transition: 5s;
-		-moz-transition: 5s;
-		-o-transition: 5s;
-		transition: 5s;
+		position: absolute;
+		top: -10%;
+		-webkit-transition: 10s;
+		-moz-transition: 10s;
+		-o-transition: 10s;
+		transition: 10s;
+		margin-top: -50px;
+		margin-left: 50px;
+		height: 750px;
 	}
 	#aboutdiv{
-		z-index:199;
-		top:0px;
-		display:flex;
+		z-index:10;
+		top: -10%;
+		left: -10%;
+		position: absolute;
+		display:none;
 	}
 </style>
 <script>
-	var popup = (context) => {
-		var AboutTakshak = document.getElementById('AboutTakshak');
-		var AboutMACE = document.getElementById('AboutMACE');
-		if(context == "takshak"){
-			AboutTakshak.style.opacity = 1;
+	var popup = function(element){
+		console.log(element);
+		document.getElementById('aboutdiv').style.display = "flex";
+		if(element == "takshak"){
+			console.log("yipee");
+			document.getElementById('AboutTakshak').style.opacity=1;
 		}
-		if(context == "MACE"){
-			AboutMACE.style.opacity = 1;
+		else{
+			console.log("oh no");
+			document.getElementById('AboutMACE').style.opacity=1;
 		}
 	}
-
-	window.onclick = () => {
-		AboutTakshak.style.opacity = 0;
-		AboutMACE.style.opacity = 0;
+	window.onclick = (e) => {
+		if(e.target.className!="about"){
+			console.log("closing");
+			document.getElementById('aboutdiv').style.display = "none";
+			AboutTakshak.style.opacity = 0;
+			AboutMACE.style.opacity = 0;
+		}
 	}
 	var titleFunc = function(){
 	    var Dateimg = document.getElementById('Date');
@@ -259,7 +274,7 @@
 					}));
 				}, 1000);
 			}, 1000);
-		}, 8000);
+		}, 6000);
 	}
 	</script>
 	</head>
@@ -270,9 +285,8 @@
 	<audio id="thunder">
 		<source src="http://www.takshak.in/2017/public/sounds/thuder1.mp3" type="audio/mpeg">
 	</audio>
-	<!-- <img class="about" onclick="popup('takshak')" src="http://localhost/Takshak17/public/images/aboutTriggers1.png"><img class="about" onclick="popup('MACE')" src="http://localhost/Takshak17/public/images/aboutTriggers2.png" style="float:left">
-	<img id="AboutTakshak" src="http://localhost/Takshak17/public/images/AboutTakshak.png" style="opacity:0"/>
-	<img id="AboutMACE" src="http://localhost/Takshak17/public/images/AboutMACE.png" style="opacity:0"/> -->
+	<div id="cloudBase">
+	</div>
 	<div id="viewport" >
 		<div id="world" >
 			<div id="titleBase">
@@ -280,7 +294,8 @@
 				<img id="logo" src="http://www.takshak.in/2017/public/images/logo.png" style="opacity:0"/>
 				<img id="comingSoon" src="http://www.takshak.in/2017/public/images/comingSoon.png" style="opacity:0"/>
 				<img id="Date" src="http://www.takshak.in/2017/public/images/Date.png" style="opacity:0"/>
-				<img class="about" id="tak" src="http://localhost/Takshak17/public/images/aboutTriggers1.png"><img id="mac" class="about" onclick="popup('MACE')" src="http://localhost/Takshak17/public/images/aboutTriggers2.png" style="float:left">
+				<img style="float:left" class="about" src="http://localhost/Takshak17/public/images/aboutTriggers1.png" onclick="popup('takshak')">
+				<img id="mac" class="about" src="http://localhost/Takshak17/public/images/aboutTriggers2.png" style="float:left" onclick="popup('mace')">
 				<div id="aboutdiv" style="z-index:5">
 					<img id="AboutTakshak" src="http://localhost/Takshak17/public/images/AboutTakshak.png" style="opacity:0"/>
 					<img id="AboutMACE" src="http://localhost/Takshak17/public/images/AboutMACE.png" style="opacity:0"/>
@@ -288,21 +303,11 @@
 			</div>
 		</div>
 	</div>
-	<div id="cloudBase">
-	</div>
 	<img class="cloudLayer bimg3 bimg31" name="bimg3" style="opacity:1" src="http://www.takshak.in/2017/public/images/cloud.png"/>
 	<img class="cloudLayer bimg3 bimg31 lightning flashit" name="bimg3" style="opacity:1" src="http://www.takshak.in/2017/public/images/cloud.png"/>
 	<img class="cloudLayer bimg3 bimg4" name="bimg4" style="opacity:0.2" src="http://www.takshak.in/2017/public/images/cloud.png"/>
 	<img class="cloudLayer bimg3 lightning bimg4 flashit2" name="bimg4" style="opacity:1" src="http://www.takshak.in/2017/public/images/cloud.png"/>
 	<script>
-
-	document.getElementById('tak').addEventListener('click', function(){
-		document.getElementById('AboutTakshak').style.opacity="1";
-	});
-
-	document.getElementById('mac').addEventListener('click', function(){
-		document.getElementById('AboutMACE').style.opacity="1";
-	});
 
 	(function() {
 		var lastTime = 0;
